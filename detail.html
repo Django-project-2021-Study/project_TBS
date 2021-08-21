@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>말하기 전에 생각했나요?</title>
+    <link rel="stylesheet" href="../static/board.css" />
+    <script>
+        function onTestChange() {
+            var key = window.event.keyCode;
+        
+            // If the user has pressed enter
+            if (key === 13) {
+                document.getElementById("commentWriteBox").value = document.getElementById("txtArea").value + "\n*";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        </script>
+        
+</head>
+<body>
+    <div class="page">
+        <div class="leftBox">
+            <div class="titleBox">
+                <h1>참견 게시판</h1>
+            </div>
+            <div class="writeNewBox">
+                <p>게시물 제목이다~</p>
+                <a href="board.html" class="writeButton"><p class="wrBtn">글목록</p></a>
+            </div>
+            <div class="mainBox">
+                <div class="postBoxDiv"> <!--글박스1-->
+                        <div class="writerInfo">
+                            <img src="../static/human.png" class="userImage">
+                            <p class="postWriter">글 작성자</p>
+                        </div>
+                        <p class="postContent">내용 어쩌구저쩌구.............
+                            <br>가나다라마바사아자차카타파하
+                            <br>내용이다 글 내용인것이다
+                        </p>
+                </div>
+
+                <div class="postBoxDiv"> <!--여기서부터 댓글박스-->
+                    <div class="writerInfo">
+                        <img src="../static/human.png" class="userImage">
+                        <p class="postWriter">댓글 작성자</p>
+                    </div>
+                    <p class="postContent">댓글 어쩌구저쩌구.............</p>
+                </div>
+
+                <div class="postBoxDiv"> <!--여기서부터 댓글박스-->
+                    <div class="writerInfo">
+                        <img src="../static/human.png" class="userImage">
+                        <p class="postWriter">댓글 작성자</p>
+                    </div>
+                    <p class="postContent">댓글 어쩌구저쩌구.............</p>
+                </div>
+
+                <div class="postBoxDiv"> <!--댓글쓰는 박스-->
+                    <div class="writerInfo">
+                        <img src="../static/human.png" class="userImage">
+                        <p class="postWriter">내 닉네임</p>
+                    </div>
+                    <form action="">
+                        <textarea id="commentWriteBox" placeholder="댓글을 입력해주세요"></textarea>
+                        <input type="submit" id="commentWriteButton" value="댓글쓰기" >
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="rightBox">
+            <div class="rightTitleBox">
+                <p>실시간 인기 참견</p>
+            </div>
+            <div class="rightPostBox">
+                <div class="postBoxDiv">
+                    <a href="#" class="postBox">
+                        <p class="postTitle">게시물 제목 어쩌구</p>
+                        <p class="postContent">내용 어쩌구저쩌구.............</p>
+                    </a>
+                </div>
+                <div class="postBoxDiv">
+                    <a href="#" class="postBox">
+                        <p class="postTitle">게시물 제목 어쩌구</p>
+                        <p class="postContent">내용 어쩌구저쩌구.............</p>
+                    </a>
+                </div>
+              
+     
+            </div>
+        </div>
+    </div>
+</body>
+</html>

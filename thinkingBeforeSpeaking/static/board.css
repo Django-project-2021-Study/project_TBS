@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'SeoulHangangM';
+    align-items: center;
+}
+.page {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:60px;
+    justify-content: center;
+}
+.leftBox {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.rightBox {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background:rgba(181, 190, 235, 0.2);
+    width:418px;
+    margin-left:24px;
+    outline:3px solid #B2AED3;
+    height:100%;
+}
+.titleBox, .writeNewBox, .mainBox {
+    outline:3px solid #B2AED3;
+    width:630px;
+    margin-bottom:12px;
+}
+.writeNewBox {
+    display:flex;
+    flex-direction: row;
+    background: #EFEBFF;
+    align-items: center;
+    justify-content: space-between;
+}
+p, h1, a {
+    color:#656187;
+    font-size:20px;
+    padding-left:15px;
+}
+h1 {
+    font-size: 30px;
+    vertical-align: middle;
+}
+.postTitle {
+    font-size:20px;
+    margin-top:-3px;
+}
+.postContent {
+    font-size:15px;
+    padding-left:15px;
+    line-height: 25px;
+    margin-top:-10px;
+}
+.writeButton {
+    width:89px;
+    height:35px;
+    border-radius: 10px;
+    background: #B5BEEB;
+    text-align: center;
+    vertical-align: middle;
+    margin-right:15px;
+    text-decoration: none;
+    color:inherit;
+}
+.wrBtn {
+    margin-top:7px;
+    margin-right:20px;
+    margin-left:-8px;
+}
+.postBoxDiv + .postBoxDiv {
+    border-top:solid;
+    border-color:#B2AED3;
+}
+.postBox {
+    text-decoration: none;
+    color:inherit;
+}
+.rightTitleBox {
+    border-bottom:solid;
+    border-color:#B2AED3;
+}
+.userImage {
+    width:26px;
+    height:26px;
+    margin-left:15px;
+    margin-right:-5px;
+    margin-top:15px;
+    vertical-align: middle;
+}
+.writerInfo {
+    display:flex;
+    flex-direction: row;
+}
+#commentWriteBox {
+    width:580px;
+    height:50px;
+    background: #EFEBFF;
+    border:none;
+    font-family:inherit;
+    border-radius: 10px;
+    margin-left:15px;
+    padding:10px;
+    line-height: 25px;
+}
+#commentWriteButton {
+    border:none;
+    font-family:inherit;
+    background: #B5BEEB;
+    width:89px;
+    height:35px;
+    border-radius: 10px;
+    color:#656187;
+    font-size:inherit;
+    margin-left:525px;
+    margin-bottom:10px;
+    margin-top:5px;
+}

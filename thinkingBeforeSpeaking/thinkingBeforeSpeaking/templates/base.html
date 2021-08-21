@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="img/TBSlogo.png" />
+    <link rel="icon" href="../../static/TBSlogo.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
@@ -21,7 +21,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="../../static/common.css" />
     <title>ThinkingBeforeSpeak</title>
   </head>
   <body>
@@ -30,7 +30,7 @@
         <a href="#" class="logo">
           <img
             class="logo__img"
-            src="./img/TBSlogo.png"
+            src="../../static/TBSlogo.png"
             alt="TBSLogo"
           />
 
@@ -47,5 +47,9 @@
       </div>
     </header>
 
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
   </body>
 </html>

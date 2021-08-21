@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="img/TBSlogo.png" />
+    <link rel="icon" href="../static/TBSlogo.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
@@ -21,8 +25,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/ghostwriting.css" />
+    <link rel="stylesheet" href="../static/common.css" />
+    <link rel="stylesheet" href="../static/ghostwriting.css" />
     <title>ThinkingBeforeSpeak</title>
   </head>
 
@@ -95,12 +99,12 @@
             <option value="학부모">
           </datalist>
         </div>
-        <button type="button" class="submit_button"><img src="./img/submitBtn.JPG">
+        <button type="button" class="submit_button"><img src="../static/submitBtn.JPG">
       </div>
   
       <div class="rcmdMenu">
         <div class="outputMsg">
-          이렇게 말해볼까요? <button type="button" class="copy_button"><img src="./img/copyBtn.JPG"></button>
+          이렇게 말해볼까요? <button type="button" class="copy_button"><img src="../static/copyBtn.JPG"></button>
         </div>
         <br>
         <div class="contentBox">
@@ -126,7 +130,9 @@
       </div>  
     </div>
     <footer>
-      <img src="./img/footerMsg.JPG" class="footerMsg">
+      <img src="../static/footerMsg.JPG" class="footerMsg">
     </footer>
   </body>
   </html>
+
+{% endblock %}

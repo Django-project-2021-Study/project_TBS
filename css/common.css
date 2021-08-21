@@ -1,0 +1,103 @@
+/* 공통 css */
+body {
+    background-color: #ffffff;
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.07em;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #656187;
+}
+  
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+  
+.inner__content {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+  
+  /* 헤더 */
+header {
+    background-color: #EFEBFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: solid #B2AED3;
+}
+  
+header > .inner {
+    height: 60px;
+}
+  
+header .logo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    text-decoration: none;
+}
+  
+header .logo .logo__img {
+    height: 60px;
+    margin-right: 5px;
+}
+
+header .submenu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 900px;
+    margin: auto 0;
+}
+  
+header .submenu li a {
+    text-decoration: none;
+    color: #B2AED2;
+    font-weight: bold;
+}
+  
+header .submenu li a:hover {
+    font-weight: bold;
+    color: #656187;
+}
+  
+header .submenu li + li {
+    margin-left: 37px;
+}
+
+header .login_submenu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
+  
+header .login_submenu li a {
+    text-decoration: none;
+    color: #B2AED2;
+    font-weight: bold;
+}
+  
+header .login_submenu li a:hover {
+    font-weight: bold;
+    color: #656187;
+}
+  
+header .login_submenu li + li {
+    margin-left: 37px;
+}
+  

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/TBSlogo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/ghostwriting.css" />
+    <title>ThinkingBeforeSpeak</title>
+  </head>
+
+  <body>
+    <div class="ghostwriting_content">
+      <div class="dropdownMenu">
+        <div class="inputMsg">
+          어떤 말을 전하고 싶으신가요?
+        </div>
+  
+        <div class="submenu">
+          누구에게?&nbsp;
+          <input type="text" list="wholist" class="listBox" placeholder="직접 입력">
+          <datalist id="wholist">
+            <option value="회사 상사">
+            <option value="교수님">
+            <option value="학부모">
+            <option value="웃어른">
+            <option value="결혼식/돌잔치 하객">
+          </datalist>
+        </div>
+  
+        <div class="submenu">
+          <form>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;언제?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="date" class="whenBox">
+            </p>
+          </form>
+        </div>
+  
+        <div class="submenu">
+          &nbsp;&nbsp;&nbsp;어디서?&nbsp;&nbsp;&nbsp;
+          <input type="text" list="wholist" class="listBox" placeholder="직접 입력">
+          <datalist id="wholist">
+            <option value="외부 사정">
+            <option value="개인적인 사정">
+            <option value="공식 행사">
+          </datalist>
+        </div>
+  
+        <div class="submenu">
+          &nbsp;&nbsp;&nbsp;무엇을?&nbsp;&nbsp;&nbsp;
+          <input type="text" list="wholist" class="listBox" placeholder="직접 입력">
+          <datalist id="wholist">
+            <option value="아르바이트 대타 문의">
+            <option value="수강 여석 증원 문의">
+            <option value="성적 문의">
+            <option value="아르바이트 대타 문의">
+            <option value="수강 여석 증원 문의">
+            <option value="성적 문의">
+          </datalist>
+        </div>
+  
+        <div class="submenu">
+          &nbsp;&nbsp;&nbsp;어떻게?&nbsp;&nbsp;&nbsp;
+          <input type="text" list="wholist" class="listBox" placeholder="직접 입력">
+          <datalist id="wholist">
+            <option value="회사 상사">
+            <option value="교수님">
+            <option value="학부모">
+          </datalist>
+        </div>
+  
+        <div class="submenu">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;왜?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" list="wholist" class="listBox" placeholder="직접 입력">
+          <datalist id="wholist">
+            <option value="Lorem ipsum dolor sit amet">
+            <option value="교수님">
+            <option value="학부모">
+          </datalist>
+        </div>
+        <button type="button" class="submit_button"><img src="./img/submitBtn.JPG">
+      </div>
+  
+      <div class="rcmdMenu">
+        <div class="outputMsg">
+          이렇게 말해볼까요? <button type="button" class="copy_button"><img src="./img/copyBtn.JPG"></button>
+        </div>
+        <br>
+        <div class="contentBox">
+          안녕하세요 OOO 교수님!<br>
+          오늘 날씨가 무척 화창합니다. 기분 좋은 하루 보내고 계신지요?<br>
+          저는 매주 수요일 오전 10시 '프로그래밍 언어의 이해'를 수강하고 있는<br>
+          컴퓨터공학과 18학번 OOO입니다.<br>
+          <br>
+          현재, 교수님의 강의를 통해 복잡한 프로그래밍 언어를 쉽게 이해하고,<br>
+          컴퓨터공학에 대한 관심을 한층 더 키우는 좋은 기회를 얻고 있습니다.<br>
+          <br>
+          다름이 아니라, 저는 이번 '프로그래밍 언어의 이해' 시험에 최선을 다했습니다.<br>
+          그럼에도 예상한 것과 달리 다소 낮은 성적을 받은 것 같아서 무척 아쉽습니다.<br>
+          이에 어떤 부분이 부족했는지를 꼭 알고 싶습니다.<br>
+          이후 학업 과정에 참고하여 보완하고자 하니,<br>
+          바쁘시겠지만 다시 한번 검토하여 말씀해주시면 감사드리겠습니다.<br>
+          <br>
+          바쁘신 와중에도 시간 내주셔서 감사합니다.<br>
+          요즘 일교차가 큽니다. 감기 조심하세요.<br>
+          <br>
+          OOO 드림
+        </div>
+      </div>  
+    </div>
+    <footer>
+      <img src="./img/footerMsg.JPG" class="footerMsg">
+    </footer>
+  </body>
+  </html>

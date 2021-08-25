@@ -7,22 +7,18 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 
 # Create your views here.
 def login(request):
-    if request.method =='POST':
-        form=AuthenticationForm(request=request, data=request.POST)
-        if form.is_valid():
-            #id를 id에 password를 password로 받아라
-            username=form.cleaned_data.get("username")
-            password=form.cleaned_data.get("password")
-            user = authenticate(request=request, username=username, password=password)
-            #있으면 로그인 해라
-            if user is not None:
-                #요청에 따른 user
-                login(request,user)
-        #if문 세개 다 거친다.
-        return redirect("home")
+    if request.method=='POST':
+        username=request.POST['userid']
+        password=request.POST['userpw']
+        user=auth.authenticate(request, username=username,password=password)
+        if user is not None:
+           auth.login(request, user)
+           return redirect('home')
+        else:
+            return render(request,'login.html',{'error':'username or password is incorrect.'})
     else:
-        form=AuthenticationForm()
-        return render(request,'login.html',{'form':form})
+        return render(request,'login.html')
+
 
 def signup(request):
     if request.method == "POST":

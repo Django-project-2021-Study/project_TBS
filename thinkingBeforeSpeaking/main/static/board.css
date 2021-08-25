@@ -125,3 +125,25 @@ h1 {
     margin-bottom:10px;
     margin-top:5px;
 }
+#postWriteBox {
+    width:580px;
+    height:600px;
+    background: inherit;
+    border:none;
+    font-family:inherit;
+    border-radius: 10px;
+    margin-left:15px;
+    padding:10px;
+    line-height: 25px;
+}
+#titleWriteBox {
+    width:580px;
+    height:55px;
+    border:none;
+    background:inherit;
+    font-family:inherit;
+    border-radius: 10px;
+    margin-left:15px;
+    padding:10px;
+    line-height: 25px;
+}

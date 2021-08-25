@@ -9,6 +9,10 @@ def detail(request, id):
     return render(request, 'detail.html', {'post':post})
 
 def board(request):
-    post = Post.objects.all()
-    return render(request, 'board.html', {'post', post})
+    # post = Post.objects.all()
+    return render(request, 'board.html')
 
+
+def edit(request):
+    # post = Post.objects.all()
+    return render(request, 'edit.html')

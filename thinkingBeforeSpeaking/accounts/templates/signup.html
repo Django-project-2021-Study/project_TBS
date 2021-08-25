@@ -9,8 +9,8 @@
         <title>Login</title>
       </head>
       <style>
-        .login{width: 404px; height:413px; position: absolute; left: 50%; top: 50%; outline: 3px solid #b2aed3; border:10px solid #efebff;transform:translate(-50%,-50%);}
-        .login h2{font-size:22px; color:#111; text-align:center; padding: 20px 0 13px;}
+        .signup{width: 404px; height:413px; position: absolute; left: 50%; top: 50%; outline: 3px solid #b2aed3; border:10px solid #efebff;transform:translate(-50%,-50%);}
+        .signup h2{font-size:22px; color:#111; text-align:center; padding: 20px 0 13px;}
         .id{padding: 0 80px 5px;}
         .id input{width:238px;font-size:17px; border-radius: 3px;height:34px;border:1px solid; padding: 0 0 12px;}
         .pw{padding: 0 80px 5px; }
@@ -27,18 +27,21 @@
       </style>
       <body>
         
-      <section class="login">
+      <section class="signup">
       
       <h2>회원가입</h2>
+      <form action="{% url 'signup' %}" method="post">
+      {% csrf_token %}
       <ul>
         <span>이메일(아이디)</span>
-        <div class="id"><input type="text"  title="아이디입력" ></div>
+        <div class="id"><input type="text"  name="userid" title="아이디입력" ></div>
         <span>비밀번호</span>
-        <div class="pw"><input type="password" title="비밀번호입력"></div>
+        <div class="pw"><input type="password" name="userpw" title="비밀번호입력"></div>
         <span>비밀번호 확인</span>
-        <div class="repw"><input type="password" title="비밀번호확인"></div>
-        <div class="btn"><button>회원가입</button></div>
+        <div class="repw"><input type="password"  name="userrepw" title="비밀번호확인"></div>
+        <div class="btn"><button type="submit">회원가입</button></div>
       </ul>
+      </form>
       <div class="link">
         <span>이미 회원이신가요?</span>
         <a href="{% url 'login' %}">로그인</a>

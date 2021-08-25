@@ -40,9 +40,16 @@
                 <li><a href="#">번역기</a></li>
             </ul>
         </a>
-
+        
         <ul class="login_submenu">
+        {% if not user.is_authenticated %}
           <li><a href="{% url 'login' %}">로그인</a></li>
+        {% endif %}
+          {% if user.is_authenticated %}
+            <li>
+            <a href="{% url 'logout' %}">로그아웃</a>
+            </li>
+        {% endif %}
         </ul>
       </div>
     </header>
